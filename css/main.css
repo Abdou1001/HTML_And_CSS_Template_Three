@@ -807,9 +807,14 @@ header .links .menu a:hover{
     background-color: var(--main-color);
     height: 100%;
     position: absolute;
+    transition: var(--main-transition);
 }
-.skills .hold::before{
-    content: attr(data);
+.skills .hold .prog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: attr(data-prog);
+    background-color: white;
     position: absolute;
     right: 0px;
     top: -50px;
@@ -819,6 +824,7 @@ header .links .menu a:hover{
     font-size: 12px;
     color: var(--main-color);
     font-weight: bold;
+    transition: var(--main-transition) linear;
 }
 /* End skills */
 /*Start WORKS*/
